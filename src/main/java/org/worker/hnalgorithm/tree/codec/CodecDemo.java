@@ -1,14 +1,14 @@
-package org.worker.hnalgorithm.tree;
+package org.worker.hnalgorithm.tree.codec;
 
-import org.worker.hnalgorithm.tree.codec.Codec;
-import org.worker.hnalgorithm.tree.codec.TreeNode;
+import org.worker.hnalgorithm.tree.inorder.InOrder;
 
 /**
  * @author peiru wang
  * @date 2021/8/15
  */
-public class TreeDemo {
+public class CodecDemo {
     public static void main(String[] args) {
+
         Codec codec = new Codec();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -25,4 +25,5 @@ public class TreeDemo {
         System.out.println(deserialize);
 
     }
+
 }
